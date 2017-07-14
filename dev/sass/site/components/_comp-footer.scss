@@ -1,0 +1,42 @@
+footer.footer {
+    .footer-container {
+        background-color: $footer-bg-color;
+        padding: $spacer $spacer 0;
+        text-align: left;
+    }
+
+    .footer-list {
+        i {
+          width: 20px;
+          &::before {
+            color: $brand-primary;
+          }
+        }
+        a {
+            &:hover {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+
+    .footer-list a,
+    h3,
+    h4 {
+        color: $brand-primary;
+        text-transform: uppercase;
+    }
+
+    .footer-list {
+        list-style: none;
+        padding-left: 0;
+    }
+    .copyright {
+      padding-top: $spacer;
+      text-align: center;
+      p {
+        color: $brand-primary;
+        font-size: .8rem;
+      }
+    }
+}

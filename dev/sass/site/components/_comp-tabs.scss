@@ -1,0 +1,70 @@
+.tabs-wrapper {
+    &.dog-profile-tab {
+        .tabs-navigation {
+            display: flex;
+            flex-flow: row nowrap;
+            width: 100%;
+            justify-content: space-between;
+            text-align: center;
+            padding-top: $spacer-big;
+        }
+
+        .tab-link {
+            list-style: none;
+            color: $brand-primary;
+            text-decoration: none;
+            width: 100%;
+            font-size: $font-size-h4;
+
+            a {
+                margin-top: 40px;
+                padding: 10px 0 0;
+                width: 100%;
+                display: inline-block;
+                background-color: $main-bg-color;
+                box-shadow: 8px 12px 25px 1px rgba(0,0,0,0.4);
+                border: 0 solid #000000;
+                transition: all 0.2s ease, margin 0.2s ease;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $brand-primary-hover;
+                    margin: 35px 0 0;
+                    padding: 10px 0 5px;
+                }
+            }
+
+            &:first-child a {
+                border-top-left-radius: 8px;
+            }
+
+            &:last-child a {
+                border-top-right-radius: 8px;
+            }
+
+            &.is-active a {
+                background-color: $navbar-bg-hover-color;
+                margin: 30px 0 0;
+                padding: 10px 0;
+                outline: none;
+            }
+        }
+
+        .tabs-content {
+            background: $navbar-bg-color;
+            color: white;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+            margin: 0 auto;
+            padding: 20px 30px;
+
+            box-shadow: 8px 12px 25px 1px rgba(0,0,0,0.4);
+
+            .tab-gallery {
+              display: flex;
+              flex-flow: row nowrap;
+              justify-content: space-around;
+            }
+        }
+    }
+}

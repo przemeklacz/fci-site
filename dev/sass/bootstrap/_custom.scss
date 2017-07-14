@@ -1,0 +1,41 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+// 1. Fonts
+// 2. Paths
+// 3. Spacers
+// 4. Colors
+// 5. Components
+//   5.1 Navbar
+//   5.2 Footer
+
+// 1. Fonts
+$font-family-sans-serif	: 'Lato', sans-serif;
+$headings-font-family	: 'Oswald', sans-serif;
+
+// 2. Paths
+$path_assets: '../../assets/';
+$path_images: $path_assets + 'images/';
+
+// 3. Spacers
+$spacer-big: 5rem;
+$spacer: 3rem;
+$spacer-small: 1rem;
+
+// 4. Colors
+$brand-primary: #beac8d;
+$brand-primary-hover: darken($brand-primary, 20%);
+$main-bg-color: rgb(27,40,62);
+$body-color: #fff;
+
+// 5. Components
+// 5.1 Navbar
+$navbar-height: 76px;
+$navbar-bg-color: $main-bg-color;
+$navbar-bg-hover-color:  darken($navbar-bg-color, 5%);
+
+// 5.2 Footer
+$footer-bg-color: rgb(27,40,62);
+$footer-font-color: #b1aca1;

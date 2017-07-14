@@ -1,0 +1,30 @@
+.ct-js-slick {
+    &.home {
+        .polite {
+            position: relative;
+        }
+
+        .slick-next,
+        .slick-prev {
+            position: absolute;
+              top: 50%;
+              &::before {
+                font-size: $font-size-h1;
+                color: #fff;
+                cursor: pointer;
+              }
+        }
+        .slick-prev {
+          left: 30px;
+          &::before {
+            content: '<';
+          }
+        }
+        .slick-next {
+          right: 30px;
+          &::before {
+            content: '>';
+          }
+        }
+    }
+}
